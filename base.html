@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-
-<html lang="">
-
+<html lang="en">
 <head>
-
-  <meta charset="UTF-8" />
-
-  <title>Hello, world!</title>
-
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <meta name="description" content="" />
-
-  <link rel="stylesheet" type="text/css" href="style.css" />
-
-  <link rel="icon" href="favicon.png">
-
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Library app" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.png">
 </head>
-
 <body>
-
-  <h1>Hello, world!</h1>
-
-  <script src="app.js"></script>
-
+    <h1>My Library</h1>
+    <button onclick="addBookToLibrary()">Add New Book</button>
+    <div id="library-container">
+        <table id="library-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="library-content">
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
